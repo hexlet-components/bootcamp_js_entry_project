@@ -82,6 +82,7 @@ Congratulations, Sam!
 
 1. Исполняемый файл **brain-progression.js** должен лежать в папке **bin**. Пропишите в нём шебанг с правильно указанным интерпретатором (node) — `#!/usr/bin/env node`.
 1. Добавьте файлу *bin/brain-progression.js* права на исполнение, выполнив в корневой директории проекта команду `chmod +x bin/brain-progression.js`. Это позволит запускать исполняемый файл напрямую из консоли без указания интерпретатора (node) - `./bin/brain-progression.js`.
+1. Также нужно добавить право на выполнение этому файлу в git: `git update-index --chmod=+x ./bin/brain-progression.js`
 
 ## Подготовка проекта
 
@@ -95,7 +96,7 @@ Congratulations, Sam!
     ```
 
 1. Подключите к проекту библиотеку readline-sync
-1. Установите пакеты для разработки: eslint и eslint-config-airbnb-base
+1. Установите пакеты для разработки: eslint, eslint-config-airbnb-base и eslint-plugin-import
 1. Настройте правильно .eslintrc.yml. Документация: <https://eslint.org/docs/user-guide/configuring>. Сверяйтесь с [nodejs-package](https://github.com/hexlet-boilerplates/nodejs-package)
 1. Установите пакет в систему с помощью `npm link` и убедитесь в том, что он работает, запустив `brain-progression` в терминале. Команда `npm link` может потребовать запуск с `sudo`
 
